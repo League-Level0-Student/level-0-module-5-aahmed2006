@@ -34,10 +34,10 @@ if(i%2==1) {
 }
 			
 			// 6. ADD this String  (containing 1 char) to the goofyName String
-
+	goofyName = goofyName + nextchar;
 }
 		// 7. Use pop-up to show user their Goofy name
-
+JOptionPane.showMessageDialog(null, "Your Goofy name is " + goofyName);
 	}
 }
 
