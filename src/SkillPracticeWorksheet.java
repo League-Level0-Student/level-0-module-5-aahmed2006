@@ -18,7 +18,7 @@ public class SkillPracticeWorksheet {
 
 		// Tell them how many cents they have (hint multiply by 10)
 		int d = Integer.parseInt(dimes);
-		int cents = d * 10;
+		int cents = d*10;
 		JOptionPane.showMessageDialog(null, "You have " + cents + " cents");
 
 		// Ask the user how tall they are (inches)
@@ -39,7 +39,7 @@ public class SkillPracticeWorksheet {
 	}
 
 	void skill3() { // Get a random number that is less than 20 and print it to the console
-
+		
 		// Get another random number that is less than 10 and print it to the console
 
 		// Using a pop-up, tell the user the difference between the numbers // Hint: use
@@ -60,12 +60,12 @@ public class SkillPracticeWorksheet {
 		// Create a variable - cars - and initialize it to the number of cars your
 		// family has. // If there are 0 cars, use a pop-up to display, "I bet you use
 		// public transportation."
-		int cars = 1;
+		int cars = 2;
 		// If there is 1 car, use a pop-up to display the make/model of the car
-		JOptionPane.showMessageDialog(null, "The make/model of the car is a Honda CRV");
+		
 		// If there is more than 1 car, use a pop-up to display how many wheels the //
 		// cars have between them.
-
+JOptionPane.showMessageDialog(null, "There are eight wheels between two cars.");
 	}
 
 	void skill5() { // In a pop-up, ask the user for the name of their school
