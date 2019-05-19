@@ -1,3 +1,5 @@
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class SkillPracticeWorksheet {
@@ -39,13 +41,22 @@ public class SkillPracticeWorksheet {
 	}
 
 	void skill3() { // Get a random number that is less than 20 and print it to the console
-		
+		Random r = new Random();
+		int random = r.nextInt(20);
+		System.out.println(random);
 		// Get another random number that is less than 10 and print it to the console
-
+		Random randy = new Random();
+		int random2 = randy.nextInt(10);
+		System.out.println(random2);
 		// Using a pop-up, tell the user the difference between the numbers // Hint: use
 		// subtraction
-
+		if(random > random2) {
+		JOptionPane.showMessageDialog(null, random - random2);
+		} else if (random < random2) {
+			JOptionPane.showMessageDialog(null, random2-random);
+		}
 	}
+
 
 	void skill4() { // In a pop-up, ask the user for the city they live in
 		String city = JOptionPane.showInputDialog("What city do you live in?");
@@ -72,6 +83,6 @@ JOptionPane.showMessageDialog(null, "There are eight wheels between two cars.");
 		String school = JOptionPane.showInputDialog("What is the name of your school?");
 		// In another pop-up, tell the user, that their school is a fantastic school. //
 		// You must include the name of the school in the message.
-		JOptionPane.showMessageDialog(null, "Your school, " + school + " is a fantastic school!");
+		JOptionPane.showMessageDialog(null, "Your school, " + school + ", is a fantastic school!");
 	}
 }
