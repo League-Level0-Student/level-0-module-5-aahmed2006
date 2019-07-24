@@ -24,7 +24,13 @@ public class EvilPolygonsChallenge {
 		// 3. Use if statements to check the the value of colorChoice and set the pen
 		// color accordingly
 		if (colorChoice == 0) {
-			//r2d2.setPenColor();
+			r2d2.setPenColor(Color.red);
+		} else if(colorChoice == 1) {
+			r2d2.setPenColor(Color.blue);
+		} else if(colorChoice == 2) {
+			r2d2.setPenColor(Color.green);
+		} else if(colorChoice == 3) {
+			r2d2.setPenColor(Color.black);
 		}
 		// 4. Ask the use how many polygons they want to be drawn.
 		String polygons = JOptionPane.showInputDialog("How many polygons would you like to be drawn?");
