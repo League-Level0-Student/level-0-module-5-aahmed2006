@@ -21,7 +21,7 @@ rob.penDown();
 rob.setSpeed(200);
 rob.hide();
         // 5. Do everything below here 360 times (use i as the counter)
-for(int i = 0; i < 361; i++) {
+for(int i = 0; i < 360; i++) {
 	        // 6. Move the robot 3 pixels
 rob.move(3);
        //  7. Turn the robot 1 degree
@@ -29,7 +29,7 @@ rob.turn(1);
         // 8. If the counter i is divisible by 20 (hint: use mod operator  %)..
 if(i%20 == 0) {
 		// 9. do steps 10 and 11 exactly 360 times (use j as the counter)
-for(int j = 0; j < 361; j++) {
+for(int j = 0; j < 360; j++) {
 				// 10. Move the robot 1 pixel
 rob.move(1);
 				// 11. Turn the robot 1 degree

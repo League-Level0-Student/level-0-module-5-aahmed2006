@@ -32,8 +32,9 @@ public class ForLoopGauntlet {
 		 }
 		 }
 
+		 
 		 for (int e = 2006; e < 2020; e++) {
-		 System.out.println(e + " I was ");
+			 System.out.println(e + " I was ");
 		 }
 
 		 for (int i = 0; i < 3; i++) {

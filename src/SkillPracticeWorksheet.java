@@ -59,7 +59,7 @@ public class SkillPracticeWorksheet {
 	void skill4() { // In a pop-up, ask the user for the city they live in
 		String city = JOptionPane.showInputDialog("What city do you live in?");
 		// If they answered "San Diego", tell them they live in America's Finest City
-		if (city == "San Diego") {
+		if (city.equalsIgnoreCase("San Diego")) {
 			JOptionPane.showMessageDialog(null, "You live in America's Finest City!");
 		}
 		// Otherwise, tell them to move to San Diego
@@ -69,12 +69,22 @@ public class SkillPracticeWorksheet {
 		// Create a variable - cars - and initialize it to the number of cars your
 		// family has. // If there are 0 cars, use a pop-up to display, "I bet you use
 		// public transportation."
-		int cars = 2;
+		String cars = JOptionPane.showInputDialog("How many cars does your family have?");
+		int c = Integer.parseInt(cars);
+		if(c==0) {
+			JOptionPane.showMessageDialog(null, "I bet you use public transportation.");
+		}
 		// If there is 1 car, use a pop-up to display the make/model of the car
-		
+		else if (c==1) {
+			String car = JOptionPane.showInputDialog("What is the model of your car?");
+			JOptionPane.showMessageDialog(null, "Your car is a " + car + ".");
+		}
 		// If there is more than 1 car, use a pop-up to display how many wheels the //
 		// cars have between them.
-JOptionPane.showMessageDialog(null, "There are eight wheels between two cars.");
+		else if(c>1) {
+			int wheels = c*4;
+			JOptionPane.showMessageDialog(null, "Your cars have " + wheels + " wheels between them.");
+		}
 	}
 
 	void skill5() { // In a pop-up, ask the user for the name of their school
